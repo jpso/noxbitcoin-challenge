@@ -22,6 +22,13 @@ Suponhamos que na Nox Bitcoin o preço de compra do bitcoin esteja R$ 30.000,00 
 
 **Ordem passiva vs Ordem ativa:** No livro de ofertas, quando uma adiciona determinar um valor de compra ou de venda que não seja o valor do topo do livro de oferta dos dois lados, chamamos essa ordem de *passiva*, pois ela está aguardando o mercado chegar em um preço determinado. Já quando a ordem é enviada ao mercado igual ou acima do valor do topo do livro de ofertas, chamamos ela de ativa, pois ela está executando a intenção de compra ou de venda de acordo com o preço determinado no mercado.
 
+**Spread:** A diferência entre o preço de compra imediato e o preço de venda imediato.
+
+**Ticker:** É nome único de um ativo em um mercado/exchange. Geralmente o ticker é utilizado como identificador único de um tick, que é um conjunto de informações sobre as negociações de um ativo, em um determinado intervá-lo de tempo (geralmente em milisegundos).
+
+Ex: 
+https://www.bitmex.com/api/v1/instrument?symbol=XBT&count=1&reverse=TRUE
+
 **Bitmex:** Umas das maiores exchanges de negociação do mundo, que possui um ambiente de testnet, com bitcoin de mentira. Por isso selecionamos ela para nossos testes.
 
 ## Desafio
@@ -31,11 +38,21 @@ Vamos dividir o sistema em duas partes:
 A primeira parte é construir uma API, que possui os seguintes endpoints:
 
 - Histórico das suas ordens
-- Cria uma ordem passiva de compra(XBTUSD)
+- Lucro Total das suas operações
+- Cria uma ordem passiva de compra (XBTUSD)
+- Cancelar uma ordem passiva de compra (XBTUSD) 
 
 Utilize a api de rest da Bitmex: https://www.bitmex.com/app/restAPI
 
 A segunda parte você precisa criar um módulo que cria uma **ordem passiva de compra** de bitcoin perpétuo (XBTUSD). Quando sua ordem for executada, você precisa criar um **ordem ativa de venda**, do mesmo valor, de bitcoin futuro (XBTZ19).
+
+Para fazer a segunda parte, você precisa seguir alguns passos:
+
+- Obter as informações do ticker XBTUSD
+- Obter as informações do ticker XBTZ19
+- Conectar ao websocket da BitMex e "escutar" o canal de trades
+- Quando a sua ordem passiva (XBTUSD) executar, você deve executar a mesma quantidade como ordem ativa (XBTZ19)
+
 
 Utilize a api de websocket da Bitmex: https://www.bitmex.com/app/wsAPI
 
