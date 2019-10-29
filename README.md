@@ -1,8 +1,10 @@
 # Desafio Nox Bitcoin
 
+Nosso desafio será tanto uma avaliação técnica, quanto a sua capacidade de entender um domínio de problema.
+
 ## Domínio do problema
 
-Nosso desafio será tanto uma avaliação técnica, quanto a sua capacidade de entender um domínio de problema. Como somos uma empresa que negocia bitcoins, então pediremos para você criar um sistema de arbitragem entre um contrato perpêtuo e um contrato futuro na BitMex. 
+Como somos uma empresa que negocia bitcoins, então pediremos para você criar um sistema de arbitragem entre um contrato perpêtuo e um contrato futuro na BitMex. 
 
 Nossa estrátegia de arbitragem será baseada no modelo passivo-ativo, ou seja, você cria ordem e colocar no livro de ofertas (ordem passiva). Quando ela for executada, você precisa executar uma ordem à mercado ativa, garantindo que essa operação tenha um *spread*, que será o lucro da operação.
 
