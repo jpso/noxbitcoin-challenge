@@ -64,7 +64,7 @@ Utilize a api de websocket da Bitmex: https://www.bitmex.com/app/wsAPI
 
 ## Requisitos
 
-- Ser escrito em C#
+- Ser escrito em qualquer linguagem, porém damos preferência para Javascript, Python ou C#
 - Criar uma conta testnet na Bitmex (https://testnet.bitmex.com/)
 - Usar Docker ou Kubernetes
 - Banco de dados pode ser PostgreSQL, SQLite ou MySQL
