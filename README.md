@@ -22,8 +22,6 @@ Suponhamos que na Nox Bitcoin o preço de compra do bitcoin esteja R$ 30.000,00 
 
 **Bitmex:** Umas das maiores exchanges de negociação do mundo, que possui um ambiente de testnet, com bitcoin de mentira. Por isso selecionamos ela para nossos testes.
 
-Ufa, dominio de negócio explicado! Se você tiver dúvidas, crie uma *issue* no repositório que eu te explico mais detalhes, beleza?
-
 ## Desafio
 
 Vamos dividir o sistema em duas partes:
@@ -58,3 +56,7 @@ Utilize a api de websocket da Bitmex: https://www.bitmex.com/app/wsAPI
 -   **Histórico de commits** (estrutura e qualidade)
 -   **UX**: A interface é de fácil uso e auto-explicativa? A API é intuitiva?
 -   **Escolhas técnicas**: A escolha das bibliotecas, banco de dados, arquitetura, etc, é a melhor escolha para a aplicação?
+
+## Dúvidas
+
+Quaisquer dúvidas que você venha a ter, consulte as [_issues_](https://github.com/jpso/noxbitcoin-challenge/issues) para ver se alguém já não a fez e caso você não ache sua resposta, abra você mesmo uma nova issue!
