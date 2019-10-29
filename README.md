@@ -20,7 +20,7 @@ Suponhamos que na Nox Bitcoin o preço de compra do bitcoin esteja R$ 30.000,00 
 
 **Livro de Ofertas:** Na exchange que vamos usar no desafio, existe o conceito de livro de ofertas. Um livro de ofertas mostra a intenção de compra e venda do mercado para um determinado ativo. Utilizando a figura abaixo, podemos perceber que o mercado está com a intenção de venda há U$ 9745.50, enquanto a intenção de compra de compra está há U$ 9745.0, um diferença de U$ 0.50 entre os dois lados do livro de ofertas. Caso a **intenção de compra seja maior que a intenção de venda, ocorre uma compra do ativo.**
 
-**Ordem passiva vs Ordem ativa:** No livro de ofertas, quando uma adiciona determinar um valor de compra ou de venda que não seja o valor do topo do livro de oferta dos dois lados, chamamos essa ordem de *passiva*, pois ela está aguardando o mercado chegar em um preço determinado. Já quando a ordem é enviada ao mercado igual ou acima do valor do topo do livro de ofertas, chamamos ela de ativa, pois ela está executando a intenção de compra ou de venda de acordo com o preço determinado no mercado.
+**Ordem passiva vs Ordem ativa:** No livro de ofertas, quando uma order é enviada para ser executada em um determinado preço, fora do preço de mercado, chamamo chamamos essa ordem de *passiva*, pois ela está aguardando o mercado "chegar" no preço-alvo. Já quando a ordem é enviada ao mercado igual ou acima do valor do topo do livro de ofertas, chamamos ela de ativa, pois ela está executando a intenção de compra ou de venda de acordo com o preço determinado no mercado.
 
 **Spread:** A diferência entre o preço de compra imediato e o preço de venda imediato.
 
