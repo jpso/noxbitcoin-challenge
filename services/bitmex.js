@@ -1,3 +1,5 @@
+'use strict'
+
 const bitmexNode = require('bitmex-node');
 
 const ORDER_SYMBOL = 'XBTUSD';
@@ -12,7 +14,7 @@ module.exports = class BitmexService {
   }
 
   retrieveOrders() {
-    return this.bitmex.Order.getOrders({ open: true });
+    return this.bitmex.Order.getOrders();
   }
 
   createPassiveOrder(quantity, orderPrice) {
@@ -28,5 +30,9 @@ module.exports = class BitmexService {
     return this.bitmex.Order.cancel({
       orderID: orderId
     });
+  }
+
+  retrievePositions() {
+    return this.bitmex.Position.get();
   }
 };
