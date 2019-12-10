@@ -7,18 +7,10 @@ const sumPositions = (orders) => {
   return orders.reduce(reducer, 0);
 }
 
-module.exports = class ProfitController {
-  constructor() {
-    this.bitmex = new bitmex();
-  }
-
-  getPositions() {
-    return this.bitmex.retrievePositions();
-  }
-
-  async getProfit(req, res) {
+module.exports = {
+  getProfit: async function(req, res) {
     try {
-      const positions = await this.getPositions();
+      const positions = await bitmex.retrievePositions();
       const sumOfPositions = sumPositions(positions);
 
       res.json(sumOfPositions);
