@@ -1,3 +1,5 @@
 TODO.org
 *~
 \#*
+node_modules/
+creds.js
