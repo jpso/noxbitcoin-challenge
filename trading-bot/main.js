@@ -1,7 +1,7 @@
 'use strict'
 
 const WebSocket = require('ws'),
-      creds = require('../creds.js'),
+      creds = require('./creds.js'),
       crypto = require('crypto'),
       bitmex = require('../orderService/services/bitmex.js'),
       orderWatcher = require('./orderWatcher.js');

@@ -1,7 +1,7 @@
 'use strict'
 
 const bitmexNode = require('bitmex-node'),
-      creds = require('../../creds.js');
+      creds = require('../creds.js');
 
 const ORDER_SYMBOL = 'XBTUSD';
 const API_KEY = creds.API_KEY;
